@@ -4,15 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="301dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        app:srcCompat="@drawable/home_image" />
+
     <TextView
+        android:id="@+id/Mortcal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="@font/poppins_light"
+        android:text="Welcome to Mortcal!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/homeImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <Button
+        android:id="@+id/monthlyPayment"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="@color/monthly_payment"
+        android:fontFamily="sans-serif-medium"
+        android:text="Monthly Payment"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeImage" />
+
+    <Button
+        android:id="@+id/loanBudget"
+        android:layout_width="328dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/orange_loanbudget"
+        android:elevation="2dp"
+        android:text="Loan Budget"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPayment"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cornerLayoutGreen"
+        android:layout_width="43dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="645dp"
+        android:background="@drawable/conner_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cornerLayoutOrange"
+        android:layout_width="82dp"
+        android:layout_height="43dp"
+
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/corner_shape2"
+        app:layout_constraintBottom_toTopOf="@+id/Mortcal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
