@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mortcalcultor">
         <activity
-
+            android:name=".MonthlyPaymentResult"
+            android:parentActivityName=".MonthlyPaymentCalActivity"
+            android:theme="@style/Mytheme"
+            android:label="✔ Summary"
+            android:exported="false" />
+        <activity
             android:name=".MonthlyPaymentCalActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="true" />
+            android:label="🧮 Let's cal"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

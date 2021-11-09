@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#2196F3"
+
     tools:context=".MonthlyPaymentCalActivity">
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_width="319dp"
         android:layout_height="19dp"
         android:layout_marginTop="15dp"
-        android:max="30"
+        android:max="80"
         app:layout_constraintStart_toStartOf="@+id/interestRateLabel"
         app:layout_constraintTop_toBottomOf="@+id/interestRateLabel" />
 
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="sans-serif"
-        android:text="Interest Rate"
+        android:text="Annual Interest Rate"
         app:layout_constraintStart_toStartOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -157,7 +157,7 @@
         android:id="@+id/percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="196dp"
+        android:layout_marginStart="170dp"
         android:fontFamily="sans-serif-medium"
         android:text="0%"
         android:textSize="16sp"
