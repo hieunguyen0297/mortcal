@@ -10,15 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mortcalcultor">
         <activity
-            android:name=".MonthlyPaymentResult"
-            android:parentActivityName=".MonthlyPaymentCalActivity"
-            android:theme="@style/Mytheme"
-            android:label="✔ Summary"
+            android:name=".LoanBudgetCalculation"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/LoanTheme"
+            android:label="✨ Find Budget"
             android:exported="false" />
         <activity
+            android:name=".MonthlyPaymentResult"
+            android:exported="false"
+            android:label="✔ Summary"
+            android:parentActivityName=".MonthlyPaymentCalActivity" />
+        <activity
             android:name=".MonthlyPaymentCalActivity"
-            android:label="🧮 Let's cal"
             android:exported="true"
+            android:label="🧮 Let's Cal"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"

@@ -15,8 +15,9 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Mytheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <item name="colorPrimary">@color/monthly_payment</item>
+<!--Theme for the loan calculation screen-->
+    <style name="LoanTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/orange_loanbudget</item>
     </style>
 
     <style name="CircularDeterminateProgressBar">

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //Change style for btn
         //monthlyPaymentBtn.setBackgroundColor(Color.parseColor("red"));
 
-        //Add event on the buttons
+        //Add event on the Monthly Payment button
         monthlyPaymentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MonthlyPaymentCalActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+        //Add click listener to the Loan Budget button
+        loanBudgetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LoanBudgetCalculation.class);
+                startActivity(intent);
             }
         });
     }
